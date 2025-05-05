@@ -1,0 +1,4 @@
+@import "tailwindcss";
+
+html { scrollbar-gutter: stable; }
+body { overscroll-behavior: none; }
