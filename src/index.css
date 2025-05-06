@@ -2,3 +2,36 @@
 
 html { scrollbar-gutter: stable; }
 body { overscroll-behavior: none; }
+
+.animate-fadeIn {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+    background: rgba(55, 65, 81, 0.5);
+    border-radius: 20px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+    background: rgba(79, 70, 229, 0.5);
+    border-radius: 20px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background: rgba(79, 70, 229, 0.7);
+}
